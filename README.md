@@ -40,6 +40,8 @@ Either use the Dockerfile to build a standalone image for the speed tests or ins
 
 #### Without docker (needs `node` and `npm` installed)
 
+First install the `speedtest-cli` and `fast-cli` speedtests, then install and start measuring:
+
 ```
 npm install
 npm run start

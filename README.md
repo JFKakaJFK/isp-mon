@@ -23,7 +23,7 @@ docker-compose up
 Once the containers are launched, visit [http://localhost:3000](http://localhost:3000). Log in using the username `admin` and password `admin`. In the menu on the lefhand side add a new data source.
 Choose MySql, with the host `db`, the port `3306`, the user `grafanaReader` with the password `readOnly` and save the data source.
 
-Now a new dashboard can be added. By using the query builder, a lot of different vizualizations can be easily added to the dashboard.
+Now a new dashboard can be added. By using the query builder, a lot of different vizualizations can be easily added to the dashboard. Alternatively the dashboard defined in  `dashboard.json` can be imported. 
 
 ### Using a custom MySql database
 
@@ -58,3 +58,5 @@ npm run start
     ```
     docker exec -it measure bash
     ```
+
+If the database runs on a Docker container on the same host, either point to the database using the local IP of the host, or better create a shared Docker network for both containers.
